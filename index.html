@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Filter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    
+
+    <div class="container">
+        <input type="search" oninput="filter_table(this, 'table_filter')" class="form_control" placeholder="Filter This Table...">
+        <table class="_table">
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th width="50px">Action</th>
+                </tr>
+            </thead>
+            <tbody id="table_filter">
+                <tr>
+                    <td>01</td>
+                    <td>Mr. Tamim</td>
+                    <td>+8801770 xxxxxx</td>
+                    <td>Address One</td>
+                    <td>
+                        <div class="action_btn">
+                            <a href="#" class="click_ripple_shine success" title="View">
+                                <i class="icon fa fa-eye"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine warning" title="Edit">
+                                <i class="icon fa fa-pencil-square-o"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine danger" title="Delete">
+                                <i class="icon fa fa-close"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Mr. Khalid Hossain</td>
+                    <td>+8801770 xxxxxx</td>
+                    <td>Address Two</td>
+                    <td>
+                        <div class="action_btn">
+                            <a href="#" class="click_ripple_shine success" title="View">
+                                <i class="icon fa fa-eye"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine warning" title="Edit">
+                                <i class="icon fa fa-pencil-square-o"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine danger" title="Delete">
+                                <i class="icon fa fa-close"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Mr. Sadik Hossain</td>
+                    <td>+8801770 xxxxxx</td>
+                    <td>Address Three</td>
+                    <td>
+                        <div class="action_btn">
+                            <a href="#" class="click_ripple_shine success" title="View">
+                                <i class="icon fa fa-eye"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine warning" title="Edit">
+                                <i class="icon fa fa-pencil-square-o"></i>
+                            </a>
+                            <a href="#" class="click_ripple_shine danger" title="Delete">
+                                <i class="icon fa fa-close"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
